@@ -3,6 +3,32 @@
 ## Description
 Site web pour gérer les votes de la finale du concours Miss/Master à l'Université Paris Santé Campus de Bastos. Les utilisateurs peuvent voter une fois pour un finaliste après authentification. L'administrateur peut bloquer le vote et consulter les statistiques.
 
+
+
+![image](https://github.com/user-attachments/assets/442ab79a-f03f-453b-8931-2ebd5608a64c)
+
+
+
+![image](https://github.com/user-attachments/assets/bc711669-c23f-4aca-8704-2e9ed442ff4a)
+
+
+
+![image](https://github.com/user-attachments/assets/d72c9aac-887d-4e86-b836-6de2a5e49b47)
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/fb9ffecc-5705-4913-8729-9fde78c84c0a)
+
+
+![image](https://github.com/user-attachments/assets/57ae5242-a117-47b6-afb6-c211ab651c3f)
+
+
+
+
+
+
 ## Prérequis
 - Serveur PHP 8.x (XAMPP/WAMP recommandé)
 - MySQL
