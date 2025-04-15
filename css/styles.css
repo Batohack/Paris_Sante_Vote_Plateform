@@ -1,0 +1,413 @@
+:root {
+    --zaffre: #27179B;
+    --phthalo-blue: #221483;
+    --zaffre-2: #2715A5;
+    --navy-blue: #160D75;
+    --black: #000000;
+    --purple-900: #2d1547; /* Approximation de purple-900 */
+    --purple-800: #3b1a5a; /* Approximation de purple-800 */
+    --purple-600: #6b21a8; /* Approximation de purple-600 */
+    --purple-700: #5b1d8e; /* Approximation de purple-700 */
+    --purple-100: #e9d5ff; /* Approximation de purple-100 */
+    --purple-50: #f5f3ff;  /* Approximation de purple-50 */
+    --yellow-500: #eab308; /* Approximation de yellow-500 */
+    --yellow-600: #ca8a04; /* Approximation de yellow-600 */
+    --yellow-400: #facc15; /* Approximation de yellow-400 */
+    --gray-50: #f9fafb;    /* Approximation de gray-50 */
+    --gray-600: #4b5563;   /* Approximation de gray-600 */
+    --gray-900: #111827;   /* Approximation de gray-900 */
+    --gray-400: #9ca3af;   /* Approximation de gray-400 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.text-dark {
+    color: #1f2937;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.hover-text-purple {
+    color: #1f2937;
+}
+
+.hover-text-purple:hover {
+    color: var(--purple-600);
+}
+
+.transition-colors {
+    transition: color 0.3s ease;
+}
+
+.btn-purple {
+    background-color: var(--purple-600);
+    color: white;
+    border: none;
+}
+
+.btn-purple:hover {
+    background-color: var(--purple-700);
+    color: white;
+}
+
+/* Hero Section */
+.bg-hero-gradient {
+    background: linear-gradient(to right, var(--purple-900), var(--purple-800), var(--purple-900));
+}
+
+.bg-hero-image {
+    background-image: url('https://via.placeholder.com/1600x800?text=Hero+Background');
+    background-size: cover;
+    background-position: center;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.inset-0 {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.opacity-20 {
+    opacity: 0.2;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.md-py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+@media (max-width: 767px) {
+    .md-py-32 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+.fs-1 {
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .fs-1 {
+        font-size: 3.75rem;
+    }
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.text-yellow {
+    color: var(--yellow-500);
+}
+
+.fs-5 {
+    font-size: 1.25rem;
+}
+
+.text-purple-light {
+    color: #d1d5db; /* Approximation de purple-100 */
+}
+
+.btn-yellow {
+    background-color: var(--yellow-500);
+    color: #000;
+    border: none;
+}
+
+.btn-yellow:hover {
+    background-color: var(--yellow-600);
+    color: #000;
+}
+
+.btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+}
+
+.btn-outline-white {
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+}
+
+.btn-outline-white:hover {
+    background: white;
+    color: var(--purple-900);
+}
+
+.bg-fade-to-white {
+    background: linear-gradient(to top, white, transparent);
+}
+
+/* Features Section */
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.fs-2 {
+    font-size: 1.875rem;
+}
+
+@media (min-width: 768px) {
+    .fs-2 {
+        font-size: 2.25rem;
+    }
+}
+
+.text-gray {
+    color: var(--gray-600);
+}
+
+.max-w-2xl {
+    max-width: 42rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-purple-light {
+    background-color: var(--purple-50);
+}
+
+.p-4 {
+    padding: 1.5rem;
+}
+
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+
+.border {
+    border: 1px solid;
+}
+
+.border-purple-border {
+    border-color: var(--purple-100);
+}
+
+.w-12 {
+    width: 3rem;
+}
+
+.h-12 {
+    height: 3rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.bg-purple-icon {
+    background-color: var(--purple-100);
+}
+
+.fs-4 {
+    font-size: 1.25rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+/* Candidates Section */
+.bg-gray-light {
+    background-color: var(--gray-50);
+}
+
+.h-80 {
+    height: 20rem;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.bg-gradient-to-t {
+    background: linear-gradient(to top, var(--purple-900), transparent);
+}
+
+.p-3 {
+    padding: 1rem;
+}
+
+.star-icon {
+    font-size: 1.25rem;
+}
+
+.text-white {
+    color: white;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transition-transform {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.btn-outline-dark {
+    border: 1px solid #1f2937;
+    color: #1f2937;
+    background: transparent;
+}
+
+.btn-outline-dark:hover {
+    background: #1f2937;
+    color: white;
+}
+
+/* How to Vote Section */
+.w-16 {
+    width: 4rem;
+}
+
+.h-16 {
+    height: 4rem;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.fs-3 {
+    font-size: 1.5rem;
+}
+
+.text-purple {
+    color: var(--purple-600);
+}
+
+.max-w-3xl {
+    max-width: 48rem;
+}
+
+/* Footer */
+.bg-dark {
+    background-color: var(--gray-900);
+}
+
+.text-gray-light {
+    color: var(--gray-400);
+}
+
+.border-top {
+    border-top: 1px solid;
+}
+
+.border-dark {
+    border-color: #374151;
+}
+
+.pt-4 {
+    padding-top: 1.5rem;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding-left: 0;
+}
+
+.space-y-2 > li {
+    margin-bottom: 0.5rem;
+}
+
+.hover-text-white {
+    color: var(--gray-400);
+}
+
+.hover-text-white:hover {
+    color: white;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.gap-3 {
+    gap: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .fs-1 {
+        font-size: 2rem;
+    }
+    .fs-2 {
+        font-size: 1.5rem;
+    }
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
