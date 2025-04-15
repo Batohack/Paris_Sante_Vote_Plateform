@@ -192,7 +192,7 @@ if (!isset($_SESSION['admin'])) :
             <!-- Statistiques des votes -->
             <div id="stats" class="bg-white rounded-xl shadow-md p-4 mb-4 max-w-3xl mx-auto">
                 <h3 class="fs-4 fw-bold mb-3">Statistiques des votes</h3>
-                <p>Votes pour Miss : <span id="miss-votes">0</span></p>
+                <p>Votes pour Mégane : <span id="miss-votes">0</span></p>
                 <p>Votes pour Master : <span id="master-votes">0</span></p>
                 <p>Total : <span id="total-votes">0</span></p>
             </div>

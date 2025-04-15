@@ -111,7 +111,7 @@
                     <div class="col">
                         <div class="bg-white rounded-xl overflow-hidden shadow-md transition-transform hover-scale">
                             <div class="position-relative h-80">
-                                <img src="/img/109b7736-dac1-4dff-b3f7-bf9b2341147b.jpg" alt="Miss 1" class="object-fit-cover w-100 h-100">
+                                <img src="./img/IMG-20250415-WA0012.jpg" alt="Miss 1" class="object-fit-cover w-100 h-100">
                                 <div class="position-absolute bottom-0 start-0 end-0 bg-gradient-to-t from-purple-dark to-transparent p-3">
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="star-icon text-yellow">⭐</span>
@@ -120,8 +120,8 @@
                                 </div>
                             </div>
                             <div class="p-3">
-                                <h3 class="fw-bold fs-5 mb-1">test1</h3>
-                                <p class="text-gray text-sm mb-2">24 ans, Paris</p>
+                                <h3 class="fw-bold fs-5 mb-1">Djamen Ngamen Mégane Karla</h3>
+                                <p class="text-gray text-sm mb-2">Etudiante, Kinésithérapie</p>
                                 <a href="login.php" class="btn btn-outline-dark w-100">Voir Profil</a>
                             </div>
                         </div>
