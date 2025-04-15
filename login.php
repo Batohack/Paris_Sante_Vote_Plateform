@@ -133,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <ul class="list-unstyled space-y-2">
                         <li class="text-sm">contact@concoursmissmaster.com</li>
                         <li class="text-sm">+33 1 23 45 67 89</li>
-                        <li class="text-sm">123 Avenue des Concours, Paris</li>
+                        <li class="text-sm">Derrière Usine Bastos</li>
                     </ul>
                     <div class="d-flex gap-3 mt-3">
                         <a href="#" class="text-gray-light hover-text-white transition-colors">Facebook</a>
@@ -144,7 +144,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="border-top border-dark mt-5 pt-4 text-center">
                 <p class="text-sm text-gray-light">
-                    © 2025 Concours Miss/Master. Tous droits réservés.
+                    © 2025 Concours Miss/MasterBatohack. Tous droits réservés.
                 </p>
             </div>
         </div>

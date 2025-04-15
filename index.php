@@ -147,7 +147,7 @@
                     <div class="col">
                         <div class="bg-white rounded-xl overflow-hidden shadow-md transition-transform hover-scale">
                             <div class="position-relative h-80">
-                                <img src="./img/5b115382-bda5-439b-813f-646c1dafe4c8.jpg" alt="Master 1" class="object-fit-cover w-100 h-100">
+                                <img src="./img/didi1.png" alt="Master 1" class="object-fit-cover w-100 h-100">
                                 <div class="position-absolute bottom-0 start-0 end-0 bg-gradient-to-t from-purple-dark to-transparent p-3">
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="star-icon text-yellow">⭐</span>
@@ -308,7 +308,7 @@
                     <ul class="list-unstyled space-y-2">
                         <li class="text-sm">contact@concoursmissmaster.com</li>
                         <li class="text-sm">+33 1 23 45 67 89</li>
-                        <li class="text-sm">123 Avenue des Concours, Paris</li>
+                        <li class="text-sm">Derrière Usine Bastos</li>
                     </ul>
                     <div class="d-flex gap-3 mt-3">
                         <a href="#" class="text-gray-light hover-text-white transition-colors">Facebook</a>
@@ -319,7 +319,7 @@
             </div>
             <div class="border-top border-dark mt-5 pt-4 text-center">
                 <p class="text-sm text-gray-light">
-                    © 2025 Concours Miss/Master. Tous droits réservés.
+                    © 2025 Concours Miss/MasterBatohack. Tous droits réservés.
                 </p>
             </div>
         </div>

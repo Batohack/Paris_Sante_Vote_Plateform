@@ -77,7 +77,7 @@ $voting_enabled = $pdo->query("SELECT voting_enabled FROM settings WHERE id = 1"
                     <div class="col">
                         <div class="bg-white rounded-xl overflow-hidden shadow-md transition-transform hover-scale">
                             <div class="position-relative h-80">
-                                <img src="img/5ccfcf25-e36e-4821-800c-36b5f743e116.jpg" alt="Master" class="object-fit-cover w-100 h-100">
+                                <img src="./img/didi1.png" alt="Master" class="object-fit-cover w-100 h-100">
                                 <div class="position-absolute bottom-0 start-0 end-0 bg-gradient-to-t from-purple-dark to-transparent p-3">
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="star-icon text-yellow">⭐</span>
@@ -86,7 +86,7 @@ $voting_enabled = $pdo->query("SELECT voting_enabled FROM settings WHERE id = 1"
                                 </div>
                             </div>
                             <div class="p-4 text-center">
-                                <h3 class="fw-bold fs-4 mb-2">Master</h3>
+                                <h3 class="fw-bold fs-4 mb-2">BIDZA BIDI Constance Lucrèce </h3>
                                 <p class="text-gray text-sm mb-3">Finaliste masculin</p>
                                 <button class="btn btn-purple vote-btn" data-candidate="Master">Voter pour Master</button>
                             </div>
@@ -133,7 +133,7 @@ $voting_enabled = $pdo->query("SELECT voting_enabled FROM settings WHERE id = 1"
                     <ul class="list-unstyled space-y-2">
                         <li class="text-sm">contact@concoursmissmaster.com</li>
                         <li class="text-sm">+33 1 23 45 67 89</li>
-                        <li class="text-sm">123 Avenue des Concours, Paris</li>
+                        <li class="text-sm">Derrière Usine Bastos</li>
                     </ul>
                     <div class="d-flex gap-3 mt-3">
                         <a href="#" class="text-gray-light hover-text-white transition-colors">Facebook</a>
@@ -144,7 +144,7 @@ $voting_enabled = $pdo->query("SELECT voting_enabled FROM settings WHERE id = 1"
             </div>
             <div class="border-top border-dark mt-5 pt-4 text-center">
                 <p class="text-sm text-gray-light">
-                    © 2025 Concours Miss/Master. Tous droits réservés.
+                    © 2025 Concours Miss/MasterBatohack. Tous droits réservés.
                 </p>
             </div>
         </div>
