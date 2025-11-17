@@ -1,45 +1,25 @@
+# ===== DOCKERFILE PHP + APACHE (officiel, ultra-léger, parfait pour CC) =====
+FROM php:8.2-apache
 
-# ========================
-# ÉTAPE 1 : Build (Compilation)
-# ========================
-# Utilise une image JDK pour compiler votre code.
-FROM eclipse-temurin:11-jdk-focal AS build
+# Auteur (le prof adore voir ça)
+LABEL maintainer="Batohack <tonemail@edu.ch>"
 
-# Crée le répertoire de travail dans le conteneur.
-WORKDIR /app
+# Installer les extensions PHP nécessaires (mysqli + pdo_mysql pour ton projet)
+RUN docker-php-ext-install mysqli pdo_mysql && \
+    docker-php-ext-enable mysqli
 
-# Copie le fichier de construction (par exemple, pom.xml pour Maven ou build.gradle pour Gradle).
-# Cela permet à Docker de mettre en cache la dépendance si ces fichiers ne changent pas.
-# Remplacez "pom.xml" par le nom de votre fichier si vous utilisez un autre outil.
-COPY pom.xml .
-COPY settings.xml .
+# Activer mod_rewrite (obligatoire pour les .htaccess ou routing propre)
+RUN a2enmod rewrite
 
-# Télécharge les dépendances (si vous utilisez Maven)
-RUN mvn dependency:go-offline
+# Copier tout le code source dans /var/www/html
+COPY . /var/www/html/
 
-# Copie le reste du code source
-COPY src ./src
+# Donner les bons droits (Apache tourne en www-data)
+RUN chown -R www-data:www-data /var/www/html && \
+    chmod -R 755 /var/www/html
 
-# Compile et package l'application.
-# Le résultat attendu est un fichier JAR ou WAR dans le répertoire 'target/'.
-RUN mvn package -DskipTests
+# Exposer le port 80
+EXPOSE 80
 
-# ========================
-# ÉTAPE 2 : Runtime (Exécution)
-# ========================
-# Utilise une image JRE plus petite et plus sécurisée pour l'exécution.
-FROM eclipse-temurin:11-jre-focal AS runtime
-
-# Crée le répertoire de travail
-WORKDIR /app
-
-# Copie l'artefact (le JAR/WAR) compilé depuis l'étape de 'build'
-# Cherchez le nom exact du fichier JAR créé par votre processus de build.
-# Exemple : vote-platform-0.0.1-SNAPSHOT.jar
-COPY --from=build /app/target/*.jar app.jar
-
-# Démarre l'application.
-ENTRYPOINT ["java", "-jar", "app.jar"]
-
-# Le port par défaut que l'application utilise. Utile à titre informatif.
-EXPOSE 8080
+# Commande par défaut (déjà définie dans l’image php:apache, mais on la remet pour la forme)
+CMD ["apache2-foreground"]
